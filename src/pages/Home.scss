@@ -1,0 +1,27 @@
+div.Home {
+  display: flex;
+  
+  align-items: center;
+  height: 100%;
+
+  & > * {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+  }
+
+  & > :first-child{
+      flex: 0 0 30%;
+  }
+
+  & > :not(:first-of-type){
+    flex-direction: column;
+    flex-grow: 1;
+
+  }
+
+
+
+}
