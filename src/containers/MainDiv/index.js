@@ -1,18 +1,17 @@
 import React from 'react';
 import SummaryCard from '../../components/SummaryCard';
 import './MainDiv.scss';
-import Vector1 from '../../img/vector1.svg'
-import Vector2 from '../../img/vector2.svg'
-import Vector3 from '../../img/vector3.svg'
-import Vector4 from '../../img/vector4.svg'
+import Vector1 from '../../img/vector1.svg';
+import Vector2 from '../../img/vector2.svg';
+import Vector3 from '../../img/vector3.svg';
+import Vector4 from '../../img/vector4.svg';
 import UpTrend from '../../img/icon-trending-up.svg';
 import DownTrend from '../../img/icon-trending-down.svg';
-
 
 const MainDiv = (props) => {
   return (
     <div className='MainDiv'>
-      <div>
+      <div className='group1'>
         <SummaryCard
           name='Pending Requests'
           amount='1478 286'
