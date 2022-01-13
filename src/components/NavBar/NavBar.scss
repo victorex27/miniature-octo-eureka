@@ -1,0 +1,35 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  .link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 2.8rem;
+    height: 3.7rem;
+
+    span {
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+      padding: 0.2rem;
+      size: 3.4rem;
+      font-size: 1.4rem;
+      line-height: 3.4rem;
+      margin-left: 0.3rem;
+    }
+  }
+
+  .arrow_down_circle{
+    display: inline-block;
+    margin-left: auto;
+    align-self: flex-end;
+    margin-top: -0.7rem;
+  }
+}
