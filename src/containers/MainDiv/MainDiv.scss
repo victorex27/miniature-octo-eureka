@@ -1,0 +1,12 @@
+.MainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+  height: 100%;
+
+  & > div {
+    display: flex;
+  }
+}

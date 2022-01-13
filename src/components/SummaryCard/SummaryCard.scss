@@ -1,0 +1,81 @@
+.SummaryCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 270px;
+  height: 123px;
+  background-color: #fff;
+
+  & > * {
+    flex: 1 1 100%;
+  }
+
+  & > :first-child {
+    flex: 0 0 88px;
+    margin-right: 9px;
+    align-self: flex-end;
+  }
+
+  .Icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main-text {
+    height: 29px;
+    width: 109px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #171717;
+    display: flex;
+    align-items: center;
+  }
+
+  .secondary-text {
+    color: #aaa;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    display: flex;
+    align-items: center;
+  }
+
+  div.tertiary-text {
+    margin-top: 18px;
+    & > span {
+      width: 75px;
+      height: 17px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #bdbdbd;
+
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    & > span.orange {
+      color: #4bde97;
+    }
+
+    & > span.red-orange {
+      color: #f26464;
+    }
+  }
+
+  span.percentage {
+    margin-left: 5.67px;
+  }
+
+  span.time {
+    margin-left: 10px;
+  }
+
+  /* colors*/
+}
