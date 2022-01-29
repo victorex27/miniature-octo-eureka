@@ -24,24 +24,58 @@
     width: 100%;
 
     & div {
-      
       border-top: 2.7rem;
 
-      &:nth-child(odd) {
-        flex: 0 0 70%;
-      }
+      // &:nth-of-type(odd){
+      //   width: 70%;
+      //   padding:1em;
+      //   border: 2px solid black;
+      //   margin: 10px;
+      // }
+      // &:nth-child(odd) {
+      //   // flex: 0 0 70%;
+      //   width: 70%;
+      //   padding:1em;
+      //   border: 2px solid black;
+      //   margin: 10px;
+      // }
 
-      &:nth-child(even) {
-        flex: 0 0 30%;
-      }
+      // &:nth-child(even) {
+      //   // flex: 0 0 30%;
+      //   width: 30%;
+      //   padding:1em;
+      //   border: 2px solid black;
+        
+      // }
+    }
+
+    .linegraph {
+      flex: 0 0 75%;
+      background-color: #fff;
+      // width: 70%;
+      padding:1em;
+      margin: 10px;
+      // padding: 10px;
+    }
+
+    .bargraph {
+      flex: 0 0 20%;
+      background: linear-gradient(135deg, #3a416f 0%, #141727 100%);
+      padding:1em;
+      margin: 10px;
+      border-radius: 1.2rem;
     }
 
     .users {
+      flex: 0 0 75%;
       background-color: #fff;
       box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
       border-radius: 1.2rem;
-      margin-bottom: 3.0rem;
+      margin-bottom: 3rem;
       overflow: hidden;
+      // width: 70%;
+      padding:1em;
+      margin: 10px;
 
       // width: 100%;
     }

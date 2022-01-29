@@ -63,7 +63,7 @@ const Table = (props) => {
                 <span>
                   <button onClick='#' className='arrow-down'>
                     <span className='svg'>
-                      <img src={ArrowDown} alt='' />
+                      <img src={ArrowDown} alt='button-img' />
                     </span>
                   </button>
                 </span>

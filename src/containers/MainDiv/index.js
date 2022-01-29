@@ -8,6 +8,8 @@ import UpTrend from '../../img/icon-trending-up.svg';
 import DownTrend from '../../img/icon-trending-down.svg';
 import Table from '../../components/Table';
 import './MainDiv.scss';
+import LineGraph from '../../components/LineGraph';
+import BarGraph from '../../components/BarGraph';
 
 const userList = [
   {
@@ -86,10 +88,12 @@ const MainDiv = (props) => {
         />
       </div>
       <div className='subdiv'>
-        <div className=''>
-          <Table users={userList} title='Recent Requests' />
+        <div className='linegraph'>
+          <LineGraph />
         </div>
-        <div>abcdefgh</div>
+        <div className='bargraph'>
+          <BarGraph />
+        </div>
         <div className='users'>
           <Table users={userList} title='Recent Requests' />
         </div>

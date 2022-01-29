@@ -1,0 +1,70 @@
+import React from 'react';
+import {
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  ReferenceLine,
+  BarChart,
+  Bar,
+} from 'recharts';
+import './BarGraph.scss';
+
+const data = [
+  {
+    name: 'Jan',
+    pv: 900,
+  },
+  {
+    name: 'Feb',
+    pv: 700,
+  },
+  {
+    name: 'Mar',
+    pv: 500,
+  },
+  {
+    name: 'Apr',
+    pv: 960,
+  },
+  {
+    name: 'May',
+    pv: 760,
+  },
+];
+
+const BarGraph = (props) => {
+  const referenceLine = [0, 200, 400, 600, 800, 1000].map((num, index) => (
+    <ReferenceLine key={index} y={num} stroke='#fff' strokeDasharray='1 1' />
+  ));
+  return (
+    <div className='BarGraph'>
+      <ResponsiveContainer width='90%' height={200} fill='#fff'>
+        <BarChart width={100} height={100} data={data} fill='#fff'>
+          {referenceLine}
+
+          <XAxis
+            dataKey='name'
+            axisLine={false}
+            tickLine={false}
+            fill='#B9B9B9'
+          />
+          <YAxis
+            domain={[0, 1000]}
+            axisLine={false}
+            tickCount={5}
+            tickLine={false}
+          />
+
+          <Bar dataKey='pv' fill='#fff' barSize={3} />
+        </BarChart>
+      </ResponsiveContainer>
+      <div className='detail'>
+        <span className='detail__title'>New Users</span> <br/>
+        <span className='detail__prefix'>(+23%)</span>
+        <span className='detail__time'>than last week</span>
+      </div>
+    </div>
+  );
+};
+
+export default BarGraph;
