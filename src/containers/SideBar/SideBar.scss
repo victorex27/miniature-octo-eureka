@@ -7,9 +7,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   background: #990d81;
-  min-height: 100vh;
-  height: auto;
+  // min-height: 100vh;
+  // height: 100%;
   width: 100%;
+  align-self: stretch;
 
   .logo {
     margin-top: 3rem;
@@ -59,7 +60,7 @@
 
       & span:last-child {
         margin-top: -10px;
-        font-family: Poppins;
+        font-family: "poppins";
         font-size: 1rem;
         font-style: normal;
         font-weight: 500;

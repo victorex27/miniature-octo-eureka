@@ -1,8 +1,8 @@
 .MainDiv {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background: #e5e5e5;
   height: 100%;
 
@@ -10,10 +10,44 @@
     display: flex;
   }
 
-  div.group1{
+  div.group1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem 1.5rem 2rem;
   }
+
+  .subdiv {
+    display: flex;
+    flex-wrap: wrap;
+    // border: 3px solid black;
+    width: 100%;
+
+    & div {
+      
+      border-top: 2.7rem;
+
+      &:nth-child(odd) {
+        flex: 0 0 70%;
+      }
+
+      &:nth-child(even) {
+        flex: 0 0 30%;
+      }
+    }
+
+    .users {
+      background-color: #fff;
+      box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 1.2rem;
+      margin-bottom: 3.0rem;
+      overflow: hidden;
+
+      // width: 100%;
+    }
+  }
 }
+
+// /* Responsive layout - makes a one column layout instead of a two-column
+//   layout */@media (max-width: 800px) {  .flex-item-right,
+//     .flex-item-left {    flex: 100%;  }}

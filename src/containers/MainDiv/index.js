@@ -1,12 +1,48 @@
 import React from 'react';
 import SummaryCard from '../../components/SummaryCard';
-import './MainDiv.scss';
 import Vector1 from '../../img/vector1.svg';
 import Vector2 from '../../img/vector2.svg';
 import Vector3 from '../../img/vector3.svg';
 import Vector4 from '../../img/vector4.svg';
 import UpTrend from '../../img/icon-trending-up.svg';
 import DownTrend from '../../img/icon-trending-down.svg';
+import Table from '../../components/Table';
+import './MainDiv.scss';
+
+const userList = [
+  {
+    img: './michael.png',
+    name: 'Michael Olu',
+    email: 'michael@mail.com',
+    type: 'New Agent',
+    status: 'Pending',
+    date: '23/04/18',
+  },
+  {
+    img: './chioma.png',
+    name: 'Chioma James',
+    email: 'alexa@mail.com',
+    type: 'Account Deactivation',
+    status: 'Pending',
+    date: '23/12/20',
+  },
+  {
+    img: './boluwatife.png',
+    name: 'Boluwatife Ade',
+    email: 'laure@mail.com',
+    type: 'New User',
+    status: 'Active',
+    date: '13/04/19',
+  },
+  {
+    img: './miriam.png',
+    name: 'Miriam Eric',
+    email: 'miriam@mail.com',
+    type: 'Email Auth',
+    status: 'Active',
+    date: '03/04/21',
+  },
+];
 
 const MainDiv = (props) => {
   return (
@@ -49,8 +85,15 @@ const MainDiv = (props) => {
           icon={Vector4}
         />
       </div>
-      <div></div>
-      <div></div>
+      <div className='subdiv'>
+        <div className=''>
+          <Table users={userList} title='Recent Requests' />
+        </div>
+        <div>abcdefgh</div>
+        <div className='users'>
+          <Table users={userList} title='Recent Requests' />
+        </div>
+      </div>
     </div>
   );
 };
