@@ -6,14 +6,14 @@ import SideBar from '../containers/SideBar';
 import './Home.scss';
 
 const Home = (props) => {
-  const [responsiveSideBar, setResponsiveSideBar] = useState(true);
+  const [responsiveSideBar, setResponsiveSideBar] = useState(false);
 
   const onClick = (ev) => {
     ev.preventDefault();
     setResponsiveSideBar(!responsiveSideBar);
   };
 
-  const sideBarStyle = responsiveSideBar ? 'nav' : ' nav click';
+  const sideBarStyle = !responsiveSideBar ? 'nav' : ' nav click';
   return (
     <>
       <Hamburger responsiveSideBar={responsiveSideBar} onClick={onClick} />
@@ -22,7 +22,7 @@ const Home = (props) => {
           <SideBar />
         </div>
 
-        {responsiveSideBar && (
+        {!responsiveSideBar && (
           <div className='container'>
             <Header /> <MainDiv />
           </div>

@@ -5,6 +5,10 @@
   height: 100%;
   min-height: 100%;
 
+  div.nav {
+    align-self: stretch;
+  }
+
   & > div {
     padding: 0 2rem;
     // display: flex;

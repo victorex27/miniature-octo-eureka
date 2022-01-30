@@ -7,13 +7,13 @@ import './Hambumger.scss';
 const Hamburger = (props) => {
   const { responsiveSideBar, onClick } = props;
 
-  const icon = responsiveSideBar ? (
+  const icon = !responsiveSideBar ? (
     <GiHamburgerMenu size={30} />
   ) : (
     <FaTimes size={30} />
   );
 
-  const color = responsiveSideBar ? '#141727' : '#fff';
+  const color = !responsiveSideBar ? '#141727' : '#fff';
   return (
     <button className='Button' onClick={onClick}>
       <IconContext.Provider value={{ color, className: 'hamburger' }}>
