@@ -79,7 +79,7 @@ const LineGraph = (props) => {
         </div>
       </div>
       <ResponsiveContainer width='90%' height={200} fill='#fff'>
-        <LineChart width={200} height={100} data={data} fill='#fff'>
+        <LineChart width='50%' height={100} data={data} fill='#fff'>
           {referenceLine}
 
           <XAxis

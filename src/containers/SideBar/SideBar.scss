@@ -4,10 +4,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background: #990d81;
+ 
   min-height: 100vh;
   // height: 100%;
-  // width: 100%;
+  width: 100%;
   align-self: stretch;
 
   .logo {
@@ -72,8 +72,3 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  div.SideBar{
-    display: none;
-  }
-}

@@ -88,7 +88,7 @@ const MainDiv = (props) => {
         />
       </div>
       <div className='subdiv'>
-        <div className='linegraph'>
+        <div className='line-graph'>
           <LineGraph />
         </div>
         <div className='bargraph'>

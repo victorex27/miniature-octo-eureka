@@ -14,6 +14,7 @@
 
   & > :first-child {
     flex: 0 0 16%;
+    background: #990d81;
   }
 
   & > :not(:first-of-type) {
@@ -27,9 +28,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  div.Home{
-   
-    .container{
+  div.Home {
+    div.nav {
+      display: none;
+    }
+
+    div.nav.click {
+      display: block;
+      flex: 1 1 100%;
+    }
+
+    .container {
       width: 100%;
       overflow: hidden;
     }

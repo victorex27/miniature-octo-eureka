@@ -1,6 +1,8 @@
 .BarGraph {
-    padding-top: 1rem;
-    margin-top: 1rem;
+  background: linear-gradient(135deg, #3a416f 0%, #141727 100%);
+  border-radius: 1.2rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
   .detail {
     color: white;
     padding-left: 3.8rem;
@@ -13,7 +15,6 @@
       letter-spacing: -0.44255319237709045px;
       text-align: left;
     }
-
 
     &__prefix {
       font-family: 'Open Sans';

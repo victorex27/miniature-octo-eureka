@@ -64,9 +64,6 @@
   .user {
     margin: auto auto 1.7rem;
     border-radius: 1rem;
-    // height: rem;
-    // width: 21.3rem;
-    // max-width: 25.3rem;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: row;
@@ -103,7 +100,6 @@
       }
 
       & span:last-child {
-        // margin-top: -10px;
         font-family: 'Open Sans';
         font-size: 1.4rem;
         font-style: normal;
@@ -163,6 +159,15 @@
         background: rgba(255, 172, 50, 0.1);
         color: rgba(255, 182, 72, 1);
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .Table {
+    td,th{
+      padding: .7rem;
     }
   }
 }
