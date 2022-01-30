@@ -5,15 +5,25 @@
   align-items: center;
   width: 100%;
 
+  .is-active{
+    // background-color: red;
+    background: rgba(255, 255, 255, 0.1);
+
+    border-right: 2px solid white;
+    border-radius: 3px;
+
+  }
+
   .link {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-decoration: none;
     margin-top: 2.8rem;
     height: 3.7rem;
+    padding: .6rem;
 
     span {
       color: rgba(255,255,255,0.6);

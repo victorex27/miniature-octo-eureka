@@ -34,7 +34,6 @@ const Table = (props) => {
               ? 'user__status user__status-pending'
               : 'user__status user__status-active';
 
-          console.log({ statusClass });
           const dateClass = index === 0 ? 'user__date-alt' : 'user__date';
 
           return (
