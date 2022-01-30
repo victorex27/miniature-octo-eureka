@@ -10,7 +10,7 @@ const Home = (props) => {
       <SideBar />
       <div className='container'>
         <Header />
-        {/* <MainDiv /> */}
+        <MainDiv />
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ const MainDiv = (props) => {
           name='Pending Requests'
           amount='1478 286'
           percentage='4.07'
-          time='last month'
+          time='Last Month'
           isTrendDirectionUp={true}
           trendIcon={UpTrend}
           icon={Vector1}
@@ -63,7 +63,7 @@ const MainDiv = (props) => {
           name='Approved Requests'
           amount='478 520'
           percentage='0.24'
-          time='last month'
+          time='Last Month'
           isTrendDirectionUp={true}
           trendIcon={UpTrend}
           icon={Vector2}
@@ -72,7 +72,7 @@ const MainDiv = (props) => {
           name='Total Agents'
           amount='154 872'
           percentage='1.64'
-          time='last month'
+          time='Last Month'
           isTrendDirectionUp={false}
           trendIcon={DownTrend}
           icon={Vector3}
@@ -80,8 +80,8 @@ const MainDiv = (props) => {
         <SummaryCard
           name='Total Users'
           amount='167'
-          percentage='4.07'
-          time='0.00'
+          percentage='0.00'
+          time='Last Month'
           isTrendDirectionUp={true}
           trendIcon={UpTrend}
           icon={Vector4}

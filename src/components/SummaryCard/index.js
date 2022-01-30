@@ -12,7 +12,7 @@ const SummaryCard = (props) => {
           <img src={icon} alt='Card Logo' />
         </div>
       </div>
-      <div>
+      <div className="text-div">
         <span className='main-text'>{amount}</span>
         <span className='secondary-text'>{name}</span>
         <div className='tertiary-text'>
@@ -23,6 +23,8 @@ const SummaryCard = (props) => {
           <span className='time'>{time}</span>
         </div>
       </div>
+      {/* <div className="empty"></div> */}
+      
     </div>
   );
 };
