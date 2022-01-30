@@ -5,6 +5,8 @@
   align-items: flex-start;
   background: #e5e5e5;
   height: 100%;
+  width: 90%;
+  padding: auto;
 
   & > div {
     display: flex;
@@ -14,70 +16,44 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem 1.5rem 2rem;
+    padding: 2rem 0rem 2rem;
+    width: 100%;
   }
 
   .subdiv {
     display: flex;
     flex-wrap: wrap;
-    // border: 3px solid black;
     width: 100%;
 
     & div {
       border-top: 2.7rem;
-
-      // &:nth-of-type(odd){
-      //   width: 70%;
-      //   padding:1em;
-      //   border: 2px solid black;
-      //   margin: 10px;
-      // }
-      // &:nth-child(odd) {
-      //   // flex: 0 0 70%;
-      //   width: 70%;
-      //   padding:1em;
-      //   border: 2px solid black;
-      //   margin: 10px;
-      // }
-
-      // &:nth-child(even) {
-      //   // flex: 0 0 30%;
-      //   width: 30%;
-      //   padding:1em;
-      //   border: 2px solid black;
-        
-      // }
     }
 
     .linegraph {
-      flex: 0 0 75%;
+      flex: 0 0 74%;
       background-color: #fff;
-      // width: 70%;
-      padding:1em;
-      margin: 10px;
-      // padding: 10px;
+      padding: 1em;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
+      border-radius: 1rem;
     }
 
     .bargraph {
-      flex: 0 0 20%;
+      flex: 0 0 22%;
       background: linear-gradient(135deg, #3a416f 0%, #141727 100%);
-      padding:1em;
-      margin: 10px;
+      padding: 0em;
+      margin-left: 3.8%;
       border-radius: 1.2rem;
     }
 
     .users {
-      flex: 0 0 75%;
+      flex: 0 0 74%;
       background-color: #fff;
       box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
       border-radius: 1.2rem;
       margin-bottom: 3rem;
+      margin-top: 3rem;
       overflow: hidden;
-      // width: 70%;
-      padding:1em;
-      margin: 10px;
-
-      // width: 100%;
+      padding: 1em;
     }
   }
 }
@@ -85,3 +61,28 @@
 // /* Responsive layout - makes a one column layout instead of a two-column
 //   layout */@media (max-width: 800px) {  .flex-item-right,
 //     .flex-item-left {    flex: 100%;  }}
+
+@media (max-width: 768px) {
+  div.MainDiv {
+    div.group1 , .subdiv{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    div.subdiv{
+      & > div{
+        flex: 1 1 100%;
+        // margin-left: auto;
+        // margin-right: auto;
+      }
+
+      .bargraph {
+        padding: 0em;
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+      }
+    }
+  }
+}

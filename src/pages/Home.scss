@@ -1,13 +1,13 @@
-div.Home {
+.Home {
   display: flex;
 
   align-items: flex-start;
   height: 100%;
   min-height: 100%;
 
-  & > * {
+  & > div {
     padding: 0 2rem;
-    display: flex;
+    // display: flex;
     align-items: center;
     // height: 100%;
   }
@@ -23,5 +23,15 @@ div.Home {
 
   div.container {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.Home{
+   
+    .container{
+      width: 100%;
+      // overflow: scroll;
+    }
   }
 }

@@ -1,15 +1,13 @@
 .SideBar {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+ 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   background: #990d81;
-  // min-height: 100vh;
+  min-height: 100vh;
   // height: 100%;
-  width: 100%;
+  // width: 100%;
   align-self: stretch;
 
   .logo {
@@ -70,5 +68,12 @@
         color: rgba(255, 255, 255, 0.5);
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  div.SideBar{
+    display: none;
   }
 }

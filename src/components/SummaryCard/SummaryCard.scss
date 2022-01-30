@@ -4,12 +4,10 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  // min-width: 200px;
-  width: 27rem;
+  flex: 0 0 22%;
   height: 12.3rem;
   background-color: #fff;
   padding: 2.2rem 3.6rem 1.7rem 1.9rem ;
-  margin-left: 2rem;
   margin-top: 1rem;
   border-radius: 1rem;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.06);
@@ -84,5 +82,10 @@
     margin-left: 1.0rem;
   }
 
-  /* colors*/
+}
+
+@media screen and (max-width: 768px) {
+  div.SummaryCard{
+    flex: 0 0 100%;
+  }
 }

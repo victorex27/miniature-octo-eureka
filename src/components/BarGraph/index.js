@@ -39,7 +39,18 @@ const BarGraph = (props) => {
   return (
     <div className='BarGraph'>
       <ResponsiveContainer width='90%' height={200} fill='#fff'>
-        <BarChart width={100} height={100} data={data} fill='#fff'>
+        <BarChart
+          width={10}
+          height={100}
+          data={data}
+          margin={{
+            top: 0,
+            right: 0,
+            left: 0,
+            bottom: 0,
+          }}
+          fill='#fff'
+        >
           {referenceLine}
 
           <XAxis
@@ -59,9 +70,9 @@ const BarGraph = (props) => {
         </BarChart>
       </ResponsiveContainer>
       <div className='detail'>
-        <span className='detail__title'>New Users</span> <br/>
+        <span className='detail__title'>New Users</span> <br />
         <span className='detail__prefix'>(+23%)</span>
-        <span className='detail__time'>than last week</span>
+        <span className='detail__time'>&nbsp;  than last week</span>
       </div>
     </div>
   );
