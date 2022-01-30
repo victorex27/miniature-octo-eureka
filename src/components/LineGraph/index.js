@@ -9,50 +9,8 @@ import {
 } from 'recharts';
 import './LineGraph.scss';
 
-const data = [
-  {
-    name: '',
-    uv: 25,
-    pv: 15,
-  },
-  {
-    name: 'Dec',
-    uv: 50,
-    pv: 23,
-  },
-  {
-    name: 'Jan',
-    uv: 47,
-    pv: 21,
-  },
-  {
-    name: 'Feb',
-    uv: 30,
-    pv: 30,
-  },
-  {
-    name: 'Mar',
-    uv: 75,
-    pv: 27,
-  },
-  {
-    name: 'Apr',
-    uv: 23,
-    pv: 40,
-  },
-  {
-    name: 'May',
-    uv: 15,
-    pv: 42,
-  },
-  {
-    name: 'Jun',
-    uv: 25,
-    pv: 75,
-  },
-];
-
 const LineGraph = (props) => {
+  const { data } = props;
   const referenceLine = data.map(({ name }, index) => (
     <ReferenceLine key={index} x={name} stroke='#eee' />
   ));

@@ -46,6 +46,72 @@ const userList = [
   },
 ];
 
+const barData = [
+  {
+    name: 'Jan',
+    pv: 900,
+  },
+  {
+    name: 'Feb',
+    pv: 700,
+  },
+  {
+    name: 'Mar',
+    pv: 500,
+  },
+  {
+    name: 'Apr',
+    pv: 960,
+  },
+  {
+    name: 'May',
+    pv: 760,
+  },
+];
+
+const lineData = [
+  {
+    name: '',
+    uv: 25,
+    pv: 15,
+  },
+  {
+    name: 'Dec',
+    uv: 50,
+    pv: 23,
+  },
+  {
+    name: 'Jan',
+    uv: 47,
+    pv: 21,
+  },
+  {
+    name: 'Feb',
+    uv: 30,
+    pv: 30,
+  },
+  {
+    name: 'Mar',
+    uv: 75,
+    pv: 27,
+  },
+  {
+    name: 'Apr',
+    uv: 23,
+    pv: 40,
+  },
+  {
+    name: 'May',
+    uv: 15,
+    pv: 42,
+  },
+  {
+    name: 'Jun',
+    uv: 25,
+    pv: 75,
+  },
+];
+
 const MainDiv = (props) => {
   return (
     <div className='MainDiv'>
@@ -89,10 +155,10 @@ const MainDiv = (props) => {
       </div>
       <div className='subdiv'>
         <div className='line-graph'>
-          <LineGraph />
+          <LineGraph data={lineData} />
         </div>
         <div className='bargraph'>
-          <BarGraph />
+          <BarGraph data={barData} />
         </div>
         <div className='users'>
           <Table users={userList} title='Recent Requests' />
